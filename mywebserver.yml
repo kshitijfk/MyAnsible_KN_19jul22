@@ -2,13 +2,25 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: I want to install web server
+  - name: I want to install web server on UBUNTU
     apt:
       name: apache2
       state: present
     when: ansible_os_family== "Debian"  
-  - name: I want to start the webserver
+  - name: I want to start the webserver on UBUNTU
     service:
       name: apache2
       state: started
     when: ansible_os_family== "Debian"
+
+  - name: I want to install webserver on RedHat
+    yum:
+      name: httpd
+      state: present
+    when: ansible_os_family== "RedHat"
+
+  - name: I want to start the webserver on RedHat
+    service:
+      name: httpd
+      state: started
+    when: ansible_os_family== "RedHat"
