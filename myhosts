@@ -11,5 +11,5 @@
 172.31.25.56
 
 [mywebservers:vars]
-svrubntu= apache222222
+svrubntu= apache2
 svrrdht= httpd
