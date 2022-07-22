@@ -10,6 +10,6 @@
 172.31.18.107
 172.31.25.56
 
-[webservers:vars]
-mywebserverpackonubuntu= apache222222
-mywebserverpackonredhat= httpd
+[mywebservers:vars]
+svrubntu= apache222222
+svrrdht= httpd

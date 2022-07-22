@@ -4,23 +4,23 @@
   tasks: 
   - name: I want to install web server on UBUNTU
     apt:
-      name: "{{mywebserverpackonubuntu}}"
+      name: "{{svrubntu}}"
       state: present
     when: ansible_os_family== "Debian"  
   - name: I want to start the webserver on UBUNTU
     service:
-      name: "{{mywebserverpackonubuntu}}"
+      name: "{{svrubntu}}"
       state: started
     when: ansible_os_family== "Debian"
 
   - name: I want to install webserver on RedHat
     yum:
-      name: "{{mywebserverpackonredhat}}"
+      name: "{{svrrdht}}"
       state: present
     when: ansible_os_family== "RedHat"
 
   - name: I want to start the webserver on RedHat
     service:
-      name: "{{mywebserverpackonredhat}}"
+      name: "{{svrrdht}}"
       state: started
     when: ansible_os_family== "RedHat"
