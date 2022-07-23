@@ -9,7 +9,3 @@
 [dbserver]
 172.31.18.107
 172.31.25.56
-
-[mywebservers:vars]
-svrubntu= apache2
-svrrdht= httpd
