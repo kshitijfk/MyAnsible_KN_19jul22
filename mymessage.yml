@@ -1,8 +1,11 @@
 ---
-hosts: 172.31.18.207
-become: yes
-vars:
-  myvars1: wget
-  myvars2: git
-  myvars3: tree
-tasks:
+- hosts: 172.31.18.207
+  become: yes
+  vars:
+    myvars1: wget
+    myvars2: git
+    myvars3: tree
+  tasks:
+  - name: display
+    debug:
+       msg: "{{myvars1}}"
