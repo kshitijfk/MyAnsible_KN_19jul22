@@ -1,6 +1,6 @@
 
 ---
-svrubntu: apache2222
+svrubntu: apache2
 svrrdht: httpd
 javaubuntu: openjdk-8-jre
 javaredhat: java-1.11.0-openjdk 
