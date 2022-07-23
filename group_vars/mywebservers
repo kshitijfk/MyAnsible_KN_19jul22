@@ -3,4 +3,4 @@
 svrubntu: apache2
 svrrdht: httpd
 javaubuntu: openjdk-8-jre
-javaredhat: java-1.11.0-openjdk 
+javaredhat: java-1.8.0-openjdk 
