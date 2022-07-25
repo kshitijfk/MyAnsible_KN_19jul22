@@ -4,4 +4,8 @@
   tasks:
    - name: I wan to execute linux command
      command: hostname -f
-     
+     register: mytaskres
+
+   - name: I want to display through debug
+     debug:
+       msg:"{{mytaskres}}"
