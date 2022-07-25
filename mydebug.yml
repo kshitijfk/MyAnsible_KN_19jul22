@@ -9,3 +9,15 @@
    - name: I want to display through debug
      debug:
        msg: "{{mytaskres}}"
+
+   - name: install git
+     apt:
+       name: git
+       state: present
+     when: mytaskres.stderr== ""
+
+   - name: install tree
+     apt:
+       name: tree
+       state: present
+     when: mytaskres.stderr!= ""
