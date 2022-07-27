@@ -15,4 +15,4 @@
   - name: adding dynamic files to ansible nodes
     template:
       src: myindex.j2
-      dest: var/www/html/index.html
+      dest: /var/www/html/index.html
