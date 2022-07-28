@@ -16,9 +16,16 @@
     template:
       src: myindex.j2
       dest: /var/www/html/index.html
-
+    notify: startwebserver
+  
   - name: how to download internet files
     get_url:
       url: https://get.jenkins.io/war-stable/2.346.2/jenkins.war
       dest: /home/ubuntu/jenkins.war
       force_basic_auth: yes
+
+  handlers:
+  - name: startwebserver
+    service:
+       name: apache2
+       state: started       
